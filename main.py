@@ -1,10 +1,9 @@
-from core.scheduler import Scheduler
-from core.queue_manager import TaskQueue
-
 def main():
+    print(" 系统启动中...")  
+
     queue = TaskQueue()
 
-    for i in range(100):
+    for i in range(10):
         queue.add_task({
             "id": i,
             "topic": f"短视频选题 {i}"
